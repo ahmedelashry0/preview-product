@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    height: 100vh;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.card{
+    background-color: white;
+    padding: 0;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 11rem;
+    margin-bottom: 10%;
+    border-radius: 15px;
+}
+
+.image{
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+.info{
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 30.5px;
+    line-height: 2rem;
+}
+
+.info p{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.price p{
+    font-family:'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.price p span{
+    color: hsl(228, 12%, 48%);
+    font-size: small;
+    text-decoration: line-through;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    padding: 14px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid hsl(158, 36%, 37%);
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+button:hover{
+    background-color: hsl(159, 36%, 26%);
+    transition:ease-in-out 0.3s;
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+    .card {
+        margin-top: 10%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px 1fr;
+        height: 100%;
+    }
+    .image {
+        background-image: url("./images/image-product-mobile.jpg");
+        border-radius: 15px 15px 0 0;
+    }
+}
+
